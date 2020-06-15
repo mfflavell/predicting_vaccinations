@@ -3,7 +3,7 @@ Predicting vaccinations to determine demand as well as specific ways to increase
 
 ## Business Case
 
-A pharmaceutical company that develops a vaccination for the H1N1 virus wants to gain a better understanding of the demand for the H1N1 vaccine compared to the seasonal flu vaccination and specific ways the company's marketing department could increase the demand for the vaccine.
+A pharmaceutical company that develops a vaccination for the H1N1 virus wants to gain a better understanding of the demand for the H1N1 vaccine compared to the seasonal flu vaccine as well as specific ways the company's marketing department could increase the demand for the vaccine.
 
 Big Day has been tasked with conducting exploratory data analysis to identify the most important features for determining if a person will get the H1N1 vaccination and with developing a binary classification model to predict whether a person will get the vaccination or not.
 
@@ -46,11 +46,11 @@ Based on Accuracy and Area Under the Curve (AUC), our best model appears to be L
 
 ![](img/logreg_roc.png)
 
-It is important to note that this model is very tolerant in terms of the number of false positives with a precision rate of .498 and a total of 826 false positives on the test set.  The model prioritizes false negatives with a recall of .756 and a total of 264 false negatives on the test set.  
+It is important to note that this model is more tolerant of false positives with a precision rate of .498 and a total of 826 false positives on the test set.  The model prioritizes false negatives with a recall of .756 and a total of 264 false negatives on the test set.
 
-**Fasle Positives** = predicted that people did vaccinate when they didn't.
+**Fasle Positives** = predicted that people did vaccinate when they didn't.  This person would receive marketing materials to schedule a vaccination with their doctor even though they may not be convinced of the risks of the H1N1 virus or the effectiveness of the vaccine.  
 
-**False Negatives** = predicted that people did not vaccinate when they actually did.
+**False Negatives** = predicted that people did not vaccinate when they actually did.  This person would receive marketing materials about the risks of the virus and the effectiveness of the vaccine even though they are already convinced and are ready to vaccinate.
 
 ## Predictive Modeling Seasonal Flu Vaccine
 
@@ -62,12 +62,18 @@ Based on Accuracy and Area Under the Curve (AUC), our best model appears to be L
 
 ## Recommendations
 
+**Direct Marketing**
+
 If the pharmaceutical company could develop relationships with doctors and pharmacies that deliver vaccinations, then they could provide a two-pronged approach of providing marketing/ educational materials as well as increasing doctor recommendations during a patient's visit.
 
   * Educational materials in the waiting room to build awareness of the risks of H1N1 as well as the effectiveness of the vaccine 
   * Help doctors make recommendations for H1N1 vaccine.
-  
-The company can also create a targeted digital marketing campaign with a lead capture survey including the most relevant questions from the federal survey and then use that data to qualify leads using the predictive models which would trigger specific marketing actions.  For example, if someone is predicted not vaccinate, then the person could be routed to a webpage containing information about the risks of H1N1 and the effectiveness of the vaccine and also recieve marketing emails if they opted in.  
+
+**Lead Qualification**
+
+The company could also create a targeted digital marketing campaign with a lead capture survey including the most relevant questions from the federal survey and use the data collected to qualify leads with the Logistic Regression classifier.  The prediction would would trigger specific marketing actions for the two different groups.  For example, if someone is predicted not to vaccinate, then the person could be routed to a webpage containing information about the risks of H1N1 and the effectiveness of the vaccine and also recieve marketing emails if they opted in.
+
+To mitigate the inevitable false positives, the marketing material should include two CTAs (Call to Actions): 1) get more information about the virus and vaccine and 2) schedule a doctor's visit for vaccination.  Depending on the person's response, the company would be able to further qualify the lead.
 
 ## Next Steps
 
