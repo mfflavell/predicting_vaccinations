@@ -3,9 +3,9 @@ Predicting vaccinations to determine demand as well as specific ways to increase
 
 ## Business Case
 
-A pharmaceutical company that develops a vaccination for the H1N1 virus wants to gain a better understanding of the demand for the H1N1 vaccine compared to the seasonal flu vaccine as well as specific ways the company's marketing department could increase the demand for the vaccine.
+A pharmaceutical company that develops a vaccination for the H1N1 virus wants to gain a better understanding of the demand for the H1N1 vaccine compared to the seasonal flu vaccine as well as specific ways the company's marketing department could increase the demand for the H1N1 vaccine.
 
-Big Day has been tasked with conducting exploratory data analysis to identify the most important features for determining if a person will get the H1N1 vaccination and with developing a binary classification model to predict whether a person will get the vaccination or not.
+We have been tasked with conducting exploratory data analysis to identify the most important features for determining if a person will get the H1N1 vaccination and with developing a binary classification model to predict whether existing and new customers will get the vaccination or not.
 
 ## Dataset
 
